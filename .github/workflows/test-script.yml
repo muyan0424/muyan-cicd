@@ -11,7 +11,9 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! muyan key=${{ env.MUYAN_KEY }}"
+        run: ｜
+          echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! muyan key=${{ env.MUYAN_KEY }}"
+          exit 1
         env:
           First_Name: Mona
           DAY_OF_WEEK: Monday22
